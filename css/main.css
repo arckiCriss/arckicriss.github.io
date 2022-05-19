@@ -2967,7 +2967,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   animation-timing-function: linear;
 }
 .logo-wrap a.title {
-  font-size: 1.75rem;
+  font-size: 1.45rem;
   font-weight: 900;
   color: inherit;
   line-height: 1.2;
@@ -3091,9 +3091,7 @@ nav.menu a.nav-item:hover {
   background: var(--site-bg);
   padding-top: 2px;
   z-index: 1;
-  line-height: 2;
-  color: var(--text-p4);
-  font-size: 0.875rem;
+  line-height: 2.4;
 }
 .l_left .widgets .widget-wrap .widget-header:empty {
   display: none;
@@ -3139,21 +3137,7 @@ nav.menu a.nav-item:hover {
 .l_left .widgets .widget-wrap .widget-header+.widget-body {
   margin-top: 0;
 }
-.l_left .widgets .widget-wrap .widget-body .more-item {
-  margin: 0.5rem 0;
-}
-.l_left .widgets .widget-wrap .widget-body .more-item .cap {
-  margin-bottom: 0.25rem;
-}
-.l_left .widgets .widget-wrap#recent .widget-body a {
-  line-height: 1.2;
-  font-weight: 500;
-  color: var(--text-p2);
-  font-size: 0.8125rem;
-}
-.l_left .widgets .widget-wrap#recent .widget-body a:hover {
-  color: #ff5722;
-}
+.l_left .widgets .widget-wrap#recent .widget-body >a,
 .l_left .widgets .widget-wrap#related .widget-body >a {
   padding: 0.5rem;
   display: block;
@@ -3165,18 +3149,22 @@ nav.menu a.nav-item:hover {
   margin: 4px 0;
   background: var(--block);
 }
+.l_left .widgets .widget-wrap#recent .widget-body >a div.cap,
 .l_left .widgets .widget-wrap#related .widget-body >a div.cap {
   margin-bottom: 0.25rem;
   color: var(--text-p4);
   display: flex;
   justify-content: space-between;
 }
+.l_left .widgets .widget-wrap#recent .widget-body >a:hover,
 .l_left .widgets .widget-wrap#related .widget-body >a:hover {
   background: var(--block-hover);
 }
+.l_left .widgets .widget-wrap#recent .widget-body >a.wiki,
 .l_left .widgets .widget-wrap#related .widget-body >a.wiki {
   font-weight: 700;
 }
+.l_left .widgets .widget-wrap#recent .widget-body >a div.excerpt,
 .l_left .widgets .widget-wrap#related .widget-body >a div.excerpt {
   margin-top: 0.5rem;
   color: var(--text-p3);
