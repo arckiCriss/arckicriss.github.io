@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-19T06:02:16.451Z</updated>
+  <updated>2022-05-23T18:48:19.093Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/05/19/test/"/>
     <id>http://example.com/2022/05/19/test/</id>
     <published>2022-05-19T06:00:55.944Z</published>
-    <updated>2022-05-19T06:02:16.451Z</updated>
+    <updated>2022-05-23T18:48:19.093Z</updated>
     
     <content type="html"><![CDATA[<p>在心率管家默默无闻地上线了一年多之后，现在终于打算来好好聊聊关于手机摄像头测量心率的那些事。本文参考了很多前辈的文章，将在文末列出。</p><span id="more"></span><p>后面是正文部分，在主页看不到。</p>]]></content>
     
@@ -44,7 +44,7 @@
     <link href="http://example.com/2022/05/19/hello-world/"/>
     <id>http://example.com/2022/05/19/hello-world/</id>
     <published>2022-05-19T05:27:30.906Z</published>
-    <updated>2022-05-19T05:27:30.906Z</updated>
+    <updated>2022-05-23T18:47:52.438Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -60,24 +60,16 @@
   </entry>
   
   <entry>
-    <title>实用的小把戏（持续更新）</title>
+    <title>从垃圾堆捡来的好点子</title>
     <link href="http://example.com/2021/03/31/%E5%AE%9E%E7%94%A8%E7%9A%84%E5%B0%8F%E6%8A%8A%E6%88%8F%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/"/>
     <id>http://example.com/2021/03/31/%E5%AE%9E%E7%94%A8%E7%9A%84%E5%B0%8F%E6%8A%8A%E6%88%8F%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</id>
     <published>2021-03-31T04:56:35.000Z</published>
-    <updated>2022-05-19T06:24:43.175Z</updated>
+    <updated>2022-05-23T20:12:48.392Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>Max Maven @ EMC</li><li>Luchen @ Pengiun lecture</li><li>Penn&amp;Teller with David @ Fool us </li><li>Butterfly @ Fool us</li><li>Derren brown @ Pheroipia(first section)</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>确实可以表演的！</p><span id="more"></span><ul><li>Max Maven @ EMC</li><li>Luchen @ Pengiun lecture</li><li>Penn&amp;Teller with David @ Fool us </li><li>Butterfly @ Fool us</li><li>Derren brown @ Pheroipia(first section)</li><li>关于一些魔术表演的废话</li><li>facade magic mask 2.0 </li><li>Polygraph</li><li>sweet disposition by luke oseland</li><li>portal by luke oseland</li><li>c3</li><li>Copycat by David Parr</li><li>自动流程 by 刘文鑫 </li><li>隐蔽找牌 by 黄泉</li><li>纸牌消失 on Tiktok</li><li>硬币消失 on Instgram</li><li>牌变手表 on TikTok</li><li>磁力which hand</li><li>大卫布莱恩show for 黑眼豆豆以及剑桥</li><li>刘谦 @ 春晚的饮料消失</li><li>Loops</li><li>Raven</li><li>Dress code by calen morelli</li><li>Self Tying Shoelace by Jay Noblezada</li><li>拉燃</li><li>达伦·布朗的活死人预测&#x2F;吉米鸡毛秀</li><li>硬卡片折纸在手心的预言</li><li>三张牌预言</li><li>橡皮泥，观众铅笔写预言</li><li>svenpads</li><li>刘谦春晚混乱预言</li><li>几乎完美的转盘巴格拉斯</li><li>Gilbreath Principle</li><li>CYPHER nfc要电话</li></ul>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;Max Maven @ EMC&lt;/li&gt;
-&lt;li&gt;Luchen @ Pengiun lecture&lt;/li&gt;
-&lt;li&gt;Penn&amp;amp;Teller with David @ Fool us &lt;/li&gt;
-&lt;li&gt;Butterfly @ Fool us&lt;/li&gt;
-</summary>
-      
+    <summary type="html">&lt;p&gt;确实可以表演的！&lt;/p&gt;</summary>
     
     
     
@@ -91,16 +83,14 @@
     <link href="http://example.com/2021/03/30/%E5%85%B3%E4%BA%8E%20Markdown/"/>
     <id>http://example.com/2021/03/30/%E5%85%B3%E4%BA%8E%20Markdown/</id>
     <published>2021-03-30T22:19:43.000Z</published>
-    <updated>2022-05-19T06:24:27.667Z</updated>
+    <updated>2022-05-23T20:11:43.556Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>Markdown 会被解释为一种 <strong>“标记语法”</strong>，实际上，可以不用去理解这种看似晦涩的意思。<br>Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌握的技巧。<br>换一种说法，Markdown 是给<strong>专注于“偷懒”</strong>，却不牺牲最终产出的人群使用的。</p></blockquote><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure><p>分别对应HTML中的<code>&lt;h1&gt;一级标题&lt;/h1&gt;</code>，以此类推。</p><p><code>**用两个星号标记起来，表示加粗**</code>，<code>*一个星号，表示斜体*</code>，<code>~~这样子表示删除~~</code>，这些就是最基本的语法了。</p><h2 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h2><p><strong>插入链接:</strong><br>这是一个 <code>[链接](http://url.com/)</code></p><p><strong>快速链接:</strong><br>只需要在网址头尾用尖括号包裹即可，比如<code>&lt;http://url.com&gt;</code></p><p><strong>特别支持:</strong><br><code>[Google (target=_blank id=google_link)](google.com)</code>  其中内容括号内的<code>target=_blank id=google_link</code> 会自动扩展到最终 HTML 对应 A 标签下的属性，另外，<code>google.com</code> 作为一个域名，不需要补全<code>http://</code>, 最终会自动补全。</p><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>跟插入链接的方式很像，就是前面多一个<code>!</code>， 但是在一般的客户端编辑器，比如 <a href="http://markeditor.com/">MarkEditor</a> 中直接拖入图片就可以。<br><code>![)](图片的url)</code></p><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p><strong>无序列表:</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-   Red</span><br><span class="line">-   Green</span><br><span class="line">-   Blue</span><br></pre></td></tr></table></figure><p><strong>有序列表则使用数字接着一个英文句点：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.  Bird</span><br><span class="line">2.  McHale</span><br><span class="line">3.  Parish</span><br></pre></td></tr></table></figure><h2 id="居中与居右"><a href="#居中与居右" class="headerlink" title="居中与居右"></a>居中与居右</h2><p>单独一行的时候，<code>[文本内容]</code>表示居中对齐，<code>[文本内容]]</code>表示居右(右侧再多一个<code>]</code>)，其它默认情况下都是居左。</p><h2 id="内容引用"><a href="#内容引用" class="headerlink" title="内容引用"></a>内容引用</h2><p>用<code>&gt;</code>放在段首，之后是空格，输入文字:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 你</span><br><span class="line">&gt; 一会看我</span><br><span class="line">&gt; 一会看云</span><br></pre></td></tr></table></figure><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p><strong><code>-</code>加上空格组成，三个以上:</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- - - - - -</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>Markdown 会被解释为一种 <strong>“标记语法”</strong>，实际上，可以不用去理解这种看似晦涩的意思。<br>Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌握的技巧。<br>换一种说法，Markdown 是给<strong>专注于“偷懒”</strong>，却不牺牲最终产出的人群使用的。</p></blockquote><span id="more"></span><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure><p>分别对应HTML中的<code>&lt;h1&gt;一级标题&lt;/h1&gt;</code>，以此类推。</p><p><code>**用两个星号标记起来，表示加粗**</code>，<code>*一个星号，表示斜体*</code>，<code>~~这样子表示删除~~</code>，这些就是最基本的语法了。</p><h2 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h2><p><strong>插入链接:</strong><br>这是一个 <code>[链接](http://url.com/)</code></p><p><strong>快速链接:</strong><br>只需要在网址头尾用尖括号包裹即可，比如<code>&lt;http://url.com&gt;</code></p><p><strong>特别支持:</strong><br><code>[Google (target=_blank id=google_link)](google.com)</code>  其中内容括号内的<code>target=_blank id=google_link</code> 会自动扩展到最终 HTML 对应 A 标签下的属性，另外，<code>google.com</code> 作为一个域名，不需要补全<code>http://</code>, 最终会自动补全。</p><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>跟插入链接的方式很像，就是前面多一个<code>!</code>， 但是在一般的客户端编辑器，比如 <a href="http://markeditor.com/">MarkEditor</a> 中直接拖入图片就可以。<br><code>![)](图片的url)</code></p><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p><strong>无序列表:</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-   Red</span><br><span class="line">-   Green</span><br><span class="line">-   Blue</span><br></pre></td></tr></table></figure><p><strong>有序列表则使用数字接着一个英文句点：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.  Bird</span><br><span class="line">2.  McHale</span><br><span class="line">3.  Parish</span><br></pre></td></tr></table></figure><h2 id="居中与居右"><a href="#居中与居右" class="headerlink" title="居中与居右"></a>居中与居右</h2><p>单独一行的时候，<code>[文本内容]</code>表示居中对齐，<code>[文本内容]]</code>表示居右(右侧再多一个<code>]</code>)，其它默认情况下都是居左。</p><h2 id="内容引用"><a href="#内容引用" class="headerlink" title="内容引用"></a>内容引用</h2><p>用<code>&gt;</code>放在段首，之后是空格，输入文字:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 你</span><br><span class="line">&gt; 一会看我</span><br><span class="line">&gt; 一会看云</span><br></pre></td></tr></table></figure><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p><strong><code>-</code>加上空格组成，三个以上:</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- - - - - -</span><br></pre></td></tr></table></figure>]]></content>
     
     
-      
-      
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Markdown 会被解释为一种 &lt;strong&gt;“标记语法”&lt;/strong&gt;，实际上，可以不用去理解这种看似晦涩的意思。&lt;br&gt;Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌</summary>
-      
+&lt;p&gt;Markdown 会被解释为一种 &lt;strong&gt;“标记语法”&lt;/strong&gt;，实际上，可以不用去理解这种看似晦涩的意思。&lt;br&gt;Markdown 接近于普通文本，另外再由少数几个语法规则描述文本结构的一种约定方式；而且花很少的时间，就能很容易掌握的技巧。&lt;br&gt;换一种说法，Markdown 是给&lt;strong&gt;专注于“偷懒”&lt;/strong&gt;，却不牺牲最终产出的人群使用的。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
     
     
     
