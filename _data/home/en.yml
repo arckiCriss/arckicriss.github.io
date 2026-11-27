@@ -37,7 +37,7 @@ awards:
 research:
   label: Research
   title: Systems and network security
-  introduction: I study the security and reliability of networked systems. Much of my work has examined mobile and wireless systems, using measurements from phones and operational cellular networks to understand how deployed services behave.
+  introduction: At Hangzhou Dianzi University, I’m part of the systems security group led by Changjiang Scholar [Yao Liu](https://faculty.hdu.edu.cn/wlkjaqxy/ly1/main.htm). I study the security and reliability of networked systems. Much of my work has examined mobile and wireless systems, using measurements from phones and operational cellular networks to understand how deployed services behave.
   current_label: Current work
   current: I’m exploring how AI can help researchers analyze complex systems, including the relationship between a protocol specification and its implementation.
 papers:
@@ -69,4 +69,4 @@ teaching:
       term: CSE 825 · Fall 2023
 students:
   heading: Students & collaboration
-  invitation: If you would like to work on systems or network security, tell me about a paper you have read, a project you have worked on, or a question you would like to investigate.
+  invitation: If you’re considering graduate study at HDU or would like to work with me on systems or network security, feel free to email me.
