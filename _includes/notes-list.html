@@ -1,0 +1,19 @@
+{% assign notes = site.posts | where: "lang", page.lang %}
+<section class="wrap reading" aria-labelledby="notes-heading">
+  <h1 id="notes-heading">{{ page.title | escape }}</h1>
+  {% if notes.size > 0 %}
+    <ol class="note-list">
+      {% for note in notes %}
+        <li>
+          <time datetime="{{ note.date | date: '%Y-%m-%d' }}">
+            {% if page.lang == 'zh-CN' %}{{ note.date | date: '%Y年%-m月%-d日' }}{% else %}{{ note.date | date: '%B %-d, %Y' }}{% endif %}
+          </time>
+          <a href="{{ note.url | relative_url | escape }}">{{ note.title | escape }}</a>
+          {% if note.description %}<p>{{ note.description | escape }}</p>{% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p>{% if page.lang == 'zh-CN' %}暂无中文随笔。{% else %}No notes in English yet.{% endif %}</p>
+  {% endif %}
+</section>
