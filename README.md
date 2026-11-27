@@ -17,8 +17,11 @@
 | 研究简介、职务、教育、项目、教学、招生 | `_data/home/zh.yml`、`_data/home/en.yml` | 分别编辑中文和英文 |
 | 新闻 | `_data/news.yml` | 把新条目加在顶部，同一条填写两种语言，可附论文链接 |
 | 论文 | `_data/publications.yml` | 添加英文原题、作者、年份、刊会和 DOI。设定 `selected: true` 和 `selected_order` 可放上首页 |
+| 刊会等级 | `_data/venue_ranks.yml` | 按刊会简称维护 CCF 第七版推荐类别，同一刊会的论文共用一项 |
 | 邮箱、肖像 | `_config.yml` | 更新 `email` 或 `portrait` |
 | 字体、版式与颜色 | `assets/css/site.css` | 所有语言共用 |
+
+新增论文后，两种语言的列表、篇数和年份导航都会自动更新。选择三篇代表作，在对应条目中设置 `selected: true` 和 `selected_order`。对于短文、海报等不适用 CCF 分类的条目，填写 `ccf_eligible: false`。单篇论文的奖项或研究亮点可分别写入 `honor.zh` 和 `honor.en`。
 
 上传照片时，把文件放在 `assets/images/portrait.jpg`，然后将 `_config.yml` 中的设置改为 `portrait: "/assets/images/portrait.jpg"`。头像使用 4:5 的竖幅，桌面显示在姓名下方，手机上显示在姓名旁。照片配置留空时，页面使用已预留的位置。
 
