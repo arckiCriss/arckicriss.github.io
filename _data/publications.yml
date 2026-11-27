@@ -21,6 +21,9 @@
   authors: [Jingwen Shi, Sihan Wang, Min-Yue Chen, Yiwen Hu, Guan-Hua Tu, Tian Xie, Man-Hsin Chen, Chi-Yu Li, Chunyi Peng]
   equal_contributors: [Jingwen Shi, Sihan Wang]
   doi: 10.1145/3733892.3733899
+  honor:
+    zh: GetMobile 研究亮点
+    en: GetMobile Research Highlight
 
 - title: "IMS is Not That Secure on Your 5G/4G Phones"
   title_zh: "5G/4G 手机上的 IMS 并没有那么安全"
@@ -60,6 +63,9 @@
   venue_full: "ACM GetMobile: Mobile Computing and Communications"
   authors: [Yiwen Hu, Min-Yue Chen, Guan-Hua Tu, Chi-Yu Li, Sihan Wang, Jingwen Shi, Tian Xie, Li Xiao, Chunyi Peng, Zhaowei Tan, Songwu Lu]
   doi: 10.1145/3599184.3599195
+  honor:
+    zh: GetMobile 研究亮点
+    en: GetMobile Research Highlight
 
 - title: "MPKIX: Towards More Accountable and Secure Internet Application Services via Mobile Networked Systems"
   title_zh: "MPKIX：利用移动网络增强互联网应用服务的可问责性与安全性"
@@ -78,6 +84,9 @@
   venue_full: ACM International Conference on Mobile Computing and Networking
   authors: [Yiwen Hu, Min-Yue Chen, Guan-Hua Tu, Chi-Yu Li, Sihan Wang, Jingwen Shi, Tian Xie, Li Xiao, Chunyi Peng, Zhaowei Tan, Songwu Lu]
   doi: 10.1145/3495243.3560534
+  honor:
+    zh: MobiCom 最佳社区贡献奖亚军
+    en: MobiCom Best Community Contribution, Runner-Up
 
 - title: "Insecurity of Operational Cellular IoT Service: New Vulnerabilities, Attacks, and Countermeasures"
   title_zh: "商用蜂窝物联网服务中的新漏洞、攻击与防御"
