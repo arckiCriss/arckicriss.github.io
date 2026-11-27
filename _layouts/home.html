@@ -75,9 +75,11 @@ layout: default
       <p class="current"><b>{{ h.research.current_label | escape }}</b> {{ h.research.current | escape }}</p>
     </section>
     <section class="block" id="papers" aria-labelledby="papers-heading">
-      <h2 id="papers-heading">{{ h.papers.heading | escape }}</h2>
-      {% for paper in selected %}{% include publication.html paper=paper %}{% endfor %}
-      <p class="archive-link"><a href="{{ h.papers.url | relative_url }}">{{ h.papers.all | escape }}</a></p>
+      <div class="selected-heading">
+        <h2 id="papers-heading">{{ h.papers.heading | escape }}</h2>
+        <a class="archive-link" href="{{ h.papers.url | relative_url }}">{{ h.papers.all | escape }}{% if locale == 'zh' %}（{{ site.data.publications.size }}）{% else %} ({{ site.data.publications.size }}){% endif %}</a>
+      </div>
+      {% for paper in selected limit: 3 %}{% include publication.html paper=paper %}{% endfor %}
     </section>
     <section class="block news" id="news" aria-labelledby="news-heading">
       <h2 id="news-heading">{{ h.news_heading | escape }}</h2>

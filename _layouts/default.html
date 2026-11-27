@@ -2,11 +2,13 @@
 <html lang="{{ page.lang | escape }}">
 {% if page.lang == 'zh-CN' %}
   {% assign home_path = '/zh/' %}
+  {% assign papers_path = '/zh/publications/' %}
   {% assign notes_path = '/zh/notes/' %}
   {% assign other_lang = 'en' %}
   {% assign other_label = 'English' %}
 {% else %}
   {% assign home_path = '/' %}
+  {% assign papers_path = '/publications/' %}
   {% assign notes_path = '/notes/' %}
   {% assign other_lang = 'zh-CN' %}
   {% assign other_label = '中文' %}
@@ -31,7 +33,7 @@
     <nav aria-label="{% if page.lang == 'zh-CN' %}站点导航{% else %}Site navigation{% endif %}">
       <a href="{{ home_path | relative_url }}#research">{% if page.lang == 'zh-CN' %}研究{% else %}Research{% endif %}</a>
       <a href="{{ home_path | relative_url }}#projects">{% if page.lang == 'zh-CN' %}项目{% else %}Projects{% endif %}</a>
-      <a href="{{ home_path | relative_url }}#papers">{% if page.lang == 'zh-CN' %}论文{% else %}Publications{% endif %}</a>
+      <a href="{{ papers_path | relative_url }}"{% if page.url == papers_path %} aria-current="page"{% endif %}>{% if page.lang == 'zh-CN' %}论文{% else %}Publications{% endif %}</a>
       <a href="{{ home_path | relative_url }}#news">{% if page.lang == 'zh-CN' %}动态{% else %}News{% endif %}</a>
       <a href="{{ home_path | relative_url }}#teaching">{% if page.lang == 'zh-CN' %}教学{% else %}Teaching{% endif %}</a>
       <a href="{{ home_path | relative_url }}#students">{% if page.lang == 'zh-CN' %}招生{% else %}Students{% endif %}</a>

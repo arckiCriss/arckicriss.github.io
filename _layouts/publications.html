@@ -1,16 +1,26 @@
 ---
 layout: default
 ---
-<section class="wrap reading archive" aria-labelledby="archive-title">
-  <h1 id="archive-title">{{ page.title | escape }}</h1>
-  <p class="note">{% if page.lang == 'zh-CN' %}* 共同第一作者{% else %}* Equal contribution{% endif %}</p>
-  {% assign years = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}
+{% assign years = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}
+{% assign ccf_directory = 'https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml' %}
+<main class="wrap reading archive" aria-labelledby="archive-title">
+  <header class="archive-intro">
+    <h1 id="archive-title">{{ page.title | escape }}</h1>
+    <p class="archive-reference">{% if page.lang == 'zh-CN' %}期刊和会议分级依据<a href="{{ ccf_directory }}">中国计算机学会推荐目录（第七版，2026 年）</a>。{% else %}Venue grades follow the <a href="{{ ccf_directory }}">China Computer Federation’s recommended list of conferences and journals (7th edition, 2026)</a>.{% endif %}</p>
+    <p class="note">{% if page.lang == 'zh-CN' %}* 共同第一作者{% else %}* Equal contribution{% endif %}</p>
+  </header>
+  <nav class="archive-years" aria-labelledby="browse-years">
+    <span id="browse-years">{% if page.lang == 'zh-CN' %}按年份{% else %}Browse by year{% endif %}</span>
+    {% for year in years %}
+      <a href="#year-{{ year.name }}">{{ year.name }}</a>
+    {% endfor %}
+  </nav>
   {% for year in years %}
-    <section class="block" aria-labelledby="year-{{ year.name }}">
+    <section class="block publication-year" aria-labelledby="year-{{ year.name }}">
       <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
       {% for paper in year.items %}
         {% include publication.html paper=paper archive="yes" %}
       {% endfor %}
     </section>
   {% endfor %}
-</section>
+</main>
