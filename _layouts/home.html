@@ -71,7 +71,7 @@ layout: default
     <section class="intro" id="research" aria-labelledby="research-heading">
       <p class="eyebrow">{{ h.research.label | escape }}</p>
       <h2 class="intro-title" id="research-heading">{{ h.research.title | escape }}</h2>
-      <p class="intro-text">{{ h.research.introduction | escape }}</p>
+      <div class="intro-text">{{ h.research.introduction | markdownify }}</div>
       <p class="current"><b>{{ h.research.current_label | escape }}</b> {{ h.research.current | escape }}</p>
     </section>
     <section class="block" id="papers" aria-labelledby="papers-heading">
