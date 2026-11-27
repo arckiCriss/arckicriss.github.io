@@ -1,0 +1,7 @@
+# CCF 2026 directory (7th edition). Keys match the venue in publications.yml.
+# For a non-qualifying contribution at a listed venue, set ccf_eligible: false on the paper.
+MobiCom: A
+ToN: A
+TMC: A
+TDSC: A
+CODASPY: C

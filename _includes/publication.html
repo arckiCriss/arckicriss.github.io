@@ -10,9 +10,15 @@
   {%- endif -%}
 {%- endunless -%}
 <article class="paper">
-  <p class="venue" lang="en"><abbr title="{{ entry.venue_full | escape }}">{{ entry.venue | escape }}</abbr> ’{{ entry.year | append: '' | slice: -2, 2 }}</p>
+  <p class="venue" lang="en"><abbr title="{{ entry.venue_full | escape }}">{{ entry.venue | escape }}</abbr> ’{{ entry.year | append: '' | slice: -2, 2 }}
+    {%- if include.archive and entry.ccf_eligible != false -%}
+      {%- assign grade = site.data.venue_ranks[entry.venue] -%}
+      {%- if grade %}<span class="venue-grade" lang="en">CCF {{ grade | escape }}</span>{% endif -%}
+    {%- endif -%}
+  </p>
   <div>
     <h3 lang="{{ title_lang }}"><a href="https://doi.org/{{ entry.doi | escape }}">{{ display_title | escape }}</a></h3>
+    {% if include.archive and entry.venue_full %}<p class="venue-full" lang="en">{{ entry.venue_full | escape }}</p>{% endif %}
     <p class="authors">
       {%- for author in names -%}
         {%- unless forloop.first -%}{% if page.lang == 'zh-CN' %}、{% else %}, {% endif %}{%- endunless -%}
@@ -21,6 +27,10 @@
       {%- endfor -%}
       {%- if names.size < entry.authors.size -%}{% if page.lang == 'zh-CN' %} 等{% else %}, et al.{% endif %}{%- endif -%}
     </p>
+    {% if include.archive and entry.honor %}
+      {% if page.lang == 'zh-CN' %}{% assign honor = entry.honor.zh %}{% else %}{% assign honor = entry.honor.en %}{% endif %}
+      {% if honor and honor != empty %}<p class="paper-honor">{{ honor | escape }}</p>{% endif %}
+    {% endif %}
     {% if entry.equal_contributors and include.archive == nil %}
       <p class="note">{% if page.lang == 'zh-CN' %}* 共同第一作者{% else %}* Equal contribution{% endif %}</p>
     {% endif %}
