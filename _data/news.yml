@@ -1,0 +1,31 @@
+# Newest first. Write the date once, with a display label and text in each language.
+- date: "2026-11"
+  url: https://doi.org/10.1109/TDSC.2026.3718578
+  en:
+    date_label: Nov 2026
+    text: Our study of what graph embeddings reveal about their source graphs appeared in the November issue of IEEE Transactions on Dependable and Secure Computing.
+  zh:
+    date_label: 2026 年 11 月
+    text: 我们关于如何从图嵌入推断原图属性的研究，收录于 IEEE Transactions on Dependable and Secure Computing 的 11 月刊。
+- date: "2026-07"
+  url: https://doi.org/10.1109/TON.2026.3710469
+  en:
+    date_label: Jul 2026
+    text: Our paper on the security of IMS services on mobile devices appeared in IEEE Transactions on Networking.
+  zh:
+    date_label: 2026 年 7 月
+    text: 我们关于手机终端 IMS 服务安全的研究发表于 IEEE Transactions on Networking。
+- date: "2026-04"
+  en:
+    date_label: Apr 2026
+    text: I joined the School of Cyberspace Security at Hangzhou Dianzi University.
+  zh:
+    date_label: 2026 年 4 月
+    text: 我加入杭州电子科技大学网络空间安全学院。
+- date: "2025-08"
+  en:
+    date_label: Aug 2025
+    text: I completed my PhD in Computer Science and Engineering at Michigan State University.
+  zh:
+    date_label: 2025 年 8 月
+    text: 我在密歇根州立大学获得计算机科学与工程博士学位。

@@ -1,0 +1,28 @@
+{%- assign entry = include.paper -%}
+{%- assign display_title = entry.title -%}
+{%- assign title_lang = 'en' -%}
+{%- assign names = entry.authors -%}
+{%- unless include.archive -%}
+  {%- assign names = entry.authors | slice: 0, 3 -%}
+  {%- if page.lang == 'zh-CN' and entry.title_zh -%}
+    {%- assign display_title = entry.title_zh -%}
+    {%- assign title_lang = 'zh-CN' -%}
+  {%- endif -%}
+{%- endunless -%}
+<article class="paper">
+  <p class="venue" lang="en"><abbr title="{{ entry.venue_full | escape }}">{{ entry.venue | escape }}</abbr> ’{{ entry.year | append: '' | slice: -2, 2 }}</p>
+  <div>
+    <h3 lang="{{ title_lang }}"><a href="https://doi.org/{{ entry.doi | escape }}">{{ display_title | escape }}</a></h3>
+    <p class="authors">
+      {%- for author in names -%}
+        {%- unless forloop.first -%}{% if page.lang == 'zh-CN' %}、{% else %}, {% endif %}{%- endunless -%}
+        {%- if author == 'Sihan Wang' -%}<b>{{ author }}</b>{%- else -%}{{ author | escape }}{%- endif -%}
+        {%- if entry.equal_contributors contains author -%}*{%- endif -%}
+      {%- endfor -%}
+      {%- if names.size < entry.authors.size -%}{% if page.lang == 'zh-CN' %} 等{% else %}, et al.{% endif %}{%- endif -%}
+    </p>
+    {% if entry.equal_contributors and include.archive == nil %}
+      <p class="note">{% if page.lang == 'zh-CN' %}* 共同第一作者{% else %}* Equal contribution{% endif %}</p>
+    {% endif %}
+  </div>
+</article>

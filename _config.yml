@@ -1,0 +1,13 @@
+title: Sihan Wang
+url: "https://arckicriss.github.io"
+baseurl: ""
+timezone: Asia/Shanghai
+markdown: kramdown
+permalink: /notes/:year/:month/:day/:title/
+email: wangsih26@hdu.edu.cn
+portrait: ""
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

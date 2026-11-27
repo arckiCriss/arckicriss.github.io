@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% if page.lang == "zh-CN" %}
+  {% assign archive_url = "/zh/notes/" %}
+  {% assign archive_label = "全部随笔" %}
+  {% assign other_lang = "en" %}
+  {% assign translation_label = "English" %}
+  {% assign date_format = "%Y年%-m月%-d日" %}
+{% else %}
+  {% assign archive_url = "/notes/" %}
+  {% assign archive_label = "All notes" %}
+  {% assign other_lang = "zh-CN" %}
+  {% assign translation_label = "中文版" %}
+  {% assign date_format = "%B %-d, %Y" %}
+{% endif %}
+<article class="wrap reading">
+  <header>
+    <a href="{{ archive_url | relative_url | escape }}">{{ archive_label }}</a>
+    <h1>{{ page.title | escape }}</h1>
+    <p>
+      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: date_format }}</time>
+      {% if page.translation_key and page.translation_key != empty %}
+        {% assign translations = site.posts | where: "translation_key", page.translation_key | where: "lang", other_lang %}
+        {% if translations.size == 1 %}
+          · <a lang="{{ other_lang }}" hreflang="{{ other_lang }}" href="{{ translations.first.url | relative_url | escape }}">{{ translation_label }}</a>
+        {% endif %}
+      {% endif %}
+    </p>
+  </header>
+  <div class="note-content">{{ content }}</div>
+</article>

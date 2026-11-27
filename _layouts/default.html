@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ page.lang | escape }}">
+{% if page.lang == 'zh-CN' %}
+  {% assign home_path = '/zh/' %}
+  {% assign notes_path = '/zh/notes/' %}
+  {% assign other_lang = 'en' %}
+  {% assign other_label = 'English' %}
+{% else %}
+  {% assign home_path = '/' %}
+  {% assign notes_path = '/notes/' %}
+  {% assign other_lang = 'zh-CN' %}
+  {% assign other_label = '中文' %}
+{% endif %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · {% if page.lang == 'zh-CN' %}杭州电子科技大学{% else %}Hangzhou Dianzi University{% endif %}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description | escape }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url | escape }}">
+  {% if page.alternate_url %}
+  <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url | escape }}">
+  <link rel="alternate" hreflang="{{ other_lang }}" href="{{ page.alternate_url | absolute_url | escape }}">
+  {% endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body id="top">
+<a class="skip" href="#page-content">{% if page.lang == 'zh-CN' %}跳至正文{% else %}Skip to content{% endif %}</a>
+<header class="top">
+  <div class="wrap">
+    <a class="institution masthead-home" href="{{ home_path | relative_url }}">{% if page.lang == 'zh-CN' %}杭州电子科技大学{% else %}Hangzhou Dianzi University{% endif %}</a>
+    <nav aria-label="{% if page.lang == 'zh-CN' %}站点导航{% else %}Site navigation{% endif %}">
+      <a href="{{ home_path | relative_url }}#research">{% if page.lang == 'zh-CN' %}研究{% else %}Research{% endif %}</a>
+      <a href="{{ home_path | relative_url }}#projects">{% if page.lang == 'zh-CN' %}项目{% else %}Projects{% endif %}</a>
+      <a href="{{ home_path | relative_url }}#papers">{% if page.lang == 'zh-CN' %}论文{% else %}Publications{% endif %}</a>
+      <a href="{{ home_path | relative_url }}#news">{% if page.lang == 'zh-CN' %}动态{% else %}News{% endif %}</a>
+      <a href="{{ home_path | relative_url }}#teaching">{% if page.lang == 'zh-CN' %}教学{% else %}Teaching{% endif %}</a>
+      <a href="{{ home_path | relative_url }}#students">{% if page.lang == 'zh-CN' %}招生{% else %}Students{% endif %}</a>
+      {% if site.posts.size > 0 %}
+        {% assign local_notes = site.posts | where: 'lang', page.lang %}
+        {% if local_notes.size == 0 %}
+          {% if page.lang == 'zh-CN' %}{% assign notes_path = '/notes/' %}{% else %}{% assign notes_path = '/zh/notes/' %}{% endif %}
+        {% endif %}
+        <a href="{{ notes_path | relative_url }}">{% if page.lang == 'zh-CN' %}随笔{% else %}Notes{% endif %}</a>
+      {% endif %}
+    </nav>
+    {% if page.alternate_url %}<a class="lang-switch" lang="{{ other_lang }}" hreflang="{{ other_lang }}" href="{{ page.alternate_url | relative_url }}">{{ other_label }}</a>{% endif %}
+  </div>
+</header>
+<div id="page-content" tabindex="-1">{{ content }}</div>
+<footer><div class="wrap"><span>{% if page.lang == 'zh-CN' %}王思涵 · 杭州{% else %}Sihan Wang · Hangzhou{% endif %}</span><a href="#top">{% if page.lang == 'zh-CN' %}返回页首{% else %}Back to top{% endif %}</a></div></footer>
+</body>
+</html>

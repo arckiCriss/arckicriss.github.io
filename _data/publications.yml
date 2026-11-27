@@ -1,0 +1,111 @@
+# Use the year of the conference or journal issue. Author order follows the publication.
+# Set selected and selected_order to feature a paper on the homepage.
+- title: "Data-Free Graph Property Inference Attacks From Graph Embeddings: Data-Free Helps Data-Available"
+  year: 2026
+  venue: TDSC
+  venue_full: IEEE Transactions on Dependable and Secure Computing
+  authors: [Yuanjia Lin, Xinyu Lei, Nankun Mu, Hongyu Huang, Sihan Wang, Bei Gong, Weizhi Meng]
+  doi: 10.1109/TDSC.2026.3718578
+
+- title: "When Mobile Equipment Security Lags Behind Infrastructure: Vulnerabilities, Attacks, and Countermeasures in IMS Services"
+  year: 2026
+  venue: ToN
+  venue_full: IEEE Transactions on Networking
+  authors: [Jingwen Shi, Min-Yue Chen, Sihan Wang, Guan-Hua Tu, Tian Xie, Yiwen Hu, Man-Hsin Chen, Haitian Yan, Chi-Yu Li, Chunyi Peng]
+  doi: 10.1109/TON.2026.3710469
+
+- title: "IMS is Not That Secure on Your 5G/4G Phones"
+  year: 2025
+  venue: GetMobile
+  venue_full: "ACM GetMobile: Mobile Computing and Communications"
+  authors: [Jingwen Shi, Sihan Wang, Min-Yue Chen, Yiwen Hu, Guan-Hua Tu, Tian Xie, Man-Hsin Chen, Chi-Yu Li, Chunyi Peng]
+  equal_contributors: [Jingwen Shi, Sihan Wang]
+  doi: 10.1145/3733892.3733899
+
+- title: "IMS is Not That Secure on Your 5G/4G Phones"
+  title_zh: "5G/4G 手机上的 IMS 并没有那么安全"
+  year: 2024
+  venue: MobiCom
+  venue_full: ACM International Conference on Mobile Computing and Networking
+  authors: [Jingwen Shi, Sihan Wang, Min-Yue Chen, Guan-Hua Tu, Tian Xie, Man-Hsin Chen, Yiwen Hu, Chi-Yu Li, Chunyi Peng]
+  equal_contributors: [Jingwen Shi, Sihan Wang]
+  doi: 10.1145/3636534.3649377
+  selected: true
+  selected_order: 1
+
+- title: "Taming the Insecurity of Cellular Emergency Services (9-1-1): From Vulnerabilities to Secure Designs"
+  year: 2024
+  venue: ToN
+  venue_full: IEEE/ACM Transactions on Networking
+  authors: [Min-Yue Chen, Yiwen Hu, Guan-Hua Tu, Chi-Yu Li, Sihan Wang, Jingwen Shi, Tian Xie, Ren-Chieh Hsu, Li Xiao, Chunyi Peng, Zhaowei Tan, Songwu Lu]
+  doi: 10.1109/TNET.2024.3379292
+
+- title: "Dissecting Operational Cellular IoT Service Security: Attacks and Defenses"
+  year: 2024
+  venue: ToN
+  venue_full: IEEE/ACM Transactions on Networking
+  authors: [Sihan Wang, Tian Xie, Min-Yue Chen, Guan-Hua Tu, Chi-Yu Li, Xinyu Lei, Po-Yi Chou, Fucheng Hsieh, Yiwen Hu, Li Xiao, Chunyi Peng]
+  doi: 10.1109/TNET.2023.3313557
+
+- title: "When Good Turns Evil: Encrypted 5G/4G Voice Calls Can Leak Your Identities"
+  year: 2023
+  venue: CNS
+  venue_full: IEEE Conference on Communications and Network Security
+  authors: [Jingwen Shi, Tian Xie, Guan-Hua Tu, Chunyi Peng, Chi-Yu Li, Andrew Z. Hou, Sihan Wang, Yiwen Hu, Xinyu Lei, Min-Yue Chen, Li Xiao, Xiaoming Liu]
+  doi: 10.1109/CNS59707.2023.10288900
+
+- title: "Unveiling the Insecurity of Operational Cellular Emergency Services (911): Vulnerabilities, Attacks, and Countermeasures"
+  year: 2023
+  venue: GetMobile
+  venue_full: "ACM GetMobile: Mobile Computing and Communications"
+  authors: [Yiwen Hu, Min-Yue Chen, Guan-Hua Tu, Chi-Yu Li, Sihan Wang, Jingwen Shi, Tian Xie, Li Xiao, Chunyi Peng, Zhaowei Tan, Songwu Lu]
+  doi: 10.1145/3599184.3599195
+
+- title: "MPKIX: Towards More Accountable and Secure Internet Application Services via Mobile Networked Systems"
+  title_zh: "MPKIX：利用移动网络增强互联网应用服务的可问责性与安全性"
+  year: 2023
+  venue: TMC
+  venue_full: IEEE Transactions on Mobile Computing
+  authors: [Tian Xie, Sihan Wang, Xinyu Lei, Jingwen Shi, Guan-Hua Tu, Chi-Yu Li]
+  equal_contributors: [Tian Xie, Sihan Wang]
+  doi: 10.1109/TMC.2022.3141694
+  selected: true
+  selected_order: 3
+
+- title: "Uncovering Insecure Designs of Cellular Emergency Services (911)"
+  year: 2022
+  venue: MobiCom
+  venue_full: ACM International Conference on Mobile Computing and Networking
+  authors: [Yiwen Hu, Min-Yue Chen, Guan-Hua Tu, Chi-Yu Li, Sihan Wang, Jingwen Shi, Tian Xie, Li Xiao, Chunyi Peng, Zhaowei Tan, Songwu Lu]
+  doi: 10.1145/3495243.3560534
+
+- title: "Insecurity of Operational Cellular IoT Service: New Vulnerabilities, Attacks, and Countermeasures"
+  title_zh: "商用蜂窝物联网服务中的新漏洞、攻击与防御"
+  year: 2021
+  venue: MobiCom
+  venue_full: ACM International Conference on Mobile Computing and Networking
+  authors: [Sihan Wang, Guan-Hua Tu, Xinyu Lei, Tian Xie, Chi-Yu Li, Po-Yi Chou, Fucheng Hsieh, Yiwen Hu, Li Xiao, Chunyi Peng]
+  doi: 10.1145/3447993.3483239
+  selected: true
+  selected_order: 2
+
+- title: "BFastPay: A Routing-free Protocol for Fast Payment in Bitcoin Network"
+  year: 2021
+  venue: CODASPY
+  venue_full: ACM Conference on Data and Application Security and Privacy
+  authors: [Xinyu Lei, Guan-Hua Tu, Tian Xie, Sihan Wang]
+  doi: 10.1145/3422337.3447823
+
+- title: "Security Threats from Bitcoin Wallet Smartphone Applications: Vulnerabilities, Attacks, and Countermeasures"
+  year: 2021
+  venue: CODASPY
+  venue_full: ACM Conference on Data and Application Security and Privacy
+  authors: [Yiwen Hu, Sihan Wang, Guan-Hua Tu, Li Xiao, Tian Xie, Xinyu Lei, Chi-Yu Li]
+  doi: 10.1145/3422337.3447832
+
+- title: "Exploring the Insecurity of Google Account Registration Protocol via Model Checking"
+  year: 2019
+  venue: SSCI
+  venue_full: IEEE Symposium Series on Computational Intelligence
+  authors: [Tian Xie, Sihan Wang, Guan-Hua Tu, Chi-Yu Li, Xinyu Lei]
+  doi: 10.1109/SSCI44817.2019.9003113
