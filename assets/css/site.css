@@ -175,7 +175,53 @@ html[lang="zh-CN"] .news time { font-family:var(--sans); white-space:nowrap }
   main.reading, main.archive-page, main.pub-archive {display:block}
   .profile-part + .profile-part {margin-top:18px}
 }
-.archive-link { margin-top:4px; font-size:.92rem; color:var(--accent) }
+/* The compact home list and complete archive use the same publication grid. */
+.selected-heading {
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:.25rem 1rem;
+}
+.archive-link { font-size:.94rem; font-weight:500; color:var(--accent); white-space:nowrap }
+.top nav a[aria-current="page"] {
+  color:var(--accent);
+  text-decoration:underline;
+  text-decoration-thickness:1.5px;
+  text-underline-offset:.3em;
+}
+main.archive { display:block }
+.archive .archive-intro { padding-bottom:0; margin-bottom:0; border-bottom:0 }
+.archive-reference { max-width:74ch; font-size:.93rem; color:var(--muted) }
+.archive-reference a { color:var(--accent) }
+.archive-intro .note { margin-top:.6rem }
+.archive-years { display:flex; flex-wrap:wrap; gap:.3rem 1rem; margin:1.35rem 0 0; align-items:baseline }
+.archive-years span { font-size:.90rem; color:var(--muted) }
+.archive-years a {
+  padding:.2rem 0;
+  color:var(--accent);
+  font:.92rem/1.5 var(--mono);
+  text-decoration:underline;
+}
+.archive .publication-year { margin-top:1.4rem; padding-top:.85rem }
+.archive .publication-year h2 { margin:0 0 .1rem; font-variant-numeric:lining-nums }
+.archive .venue-grade {
+  display:block;
+  width:max-content;
+  margin-top:.35rem;
+  padding:.12rem .35rem;
+  border:1px solid #acbbb9;
+  border-radius:2px;
+  color:#38545a;
+  font:500 .80rem/1.25 var(--sans);
+  letter-spacing:.01em;
+}
+.archive .venue-full { margin-top:.3rem; color:var(--muted); font:.92rem/1.45 var(--sans) }
+.archive .paper-honor { margin-top:.4rem; color:#405b55; font:.90rem/1.4 var(--sans) }
+@media(max-width:500px) {
+  .archive-years { gap:.25rem .8rem }
+  .archive .venue-grade { display:inline-block; margin:0 0 0 .45rem; vertical-align:baseline }
+}
 .venue abbr { text-decoration:none }
 @media(max-width:720px) {
   .profile-part[aria-labelledby="experience-heading"],
