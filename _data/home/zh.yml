@@ -1,0 +1,72 @@
+name: 王思涵
+profile_label: 个人简介
+department: 网络空间安全学院
+position: 特聘副研究员
+portrait: 个人照片
+portrait_alt: 王思涵的个人照片
+scholar: 谷歌学术
+education:
+  heading: 教育背景
+  doctoral_university: 密歇根州立大学
+  doctoral_degree: 计算机科学与工程博士 · 2025 年 8 月
+  advisor_label: 博士导师
+  doctoral_advisor: 涂冠华
+  dissertation: 博士学位论文
+  graduate_path: 硕士阶段师从邢国良，于 2019 年 5 月转入博士项目。
+  undergraduate_university: 东北大学
+  undergraduate_degree: 计算机科学与工程学士 · 2016 年 7 月
+  undergraduate_location: 中国沈阳
+appointments:
+  heading: 工作经历
+  items:
+    - institution: 杭州电子科技大学
+      detail: 特聘副研究员 · 2026 年 4 月至今
+    - institution: 犹他州立大学
+      detail: 研究助理 · 2025 年 8 月至 12 月
+awards:
+  heading: 代表性荣誉
+  items:
+    - name: ACM MobiCom 最佳社区论文奖亚军
+      date: "2022"
+    - name: AT&T 安全研究奖
+      date: "2023"
+    - name: ACM SIGMOBILE 研究亮点
+      date: "2023"
+    - name: ACM GetMobile 研究亮点
+      date: "2023、2025"
+research:
+  label: 研究方向
+  title: 系统与网络安全
+  introduction: 我研究网络化系统的安全性与可靠性。过去的工作主要关注移动与无线系统，通过对手机终端和商用蜂窝网络的实测，分析实际部署中的安全问题。
+  current_label: 近期工作
+  current: 我也在探索如何借助人工智能分析复杂系统的安全性，例如对照协议规范与系统实现，理解两者在实际运行中的差异。
+papers:
+  heading: 代表性论文
+  all: 全部论文
+  url: /zh/publications/
+news_heading: 动态
+news_paper: 论文
+projects:
+  heading: 研究项目
+  items:
+    - title: 蜂窝网络紧急呼叫
+      detail: 博士期间，我在美国国家科学基金会（NSF）SaTC 下一代 911 项目中担任学生负责人，参与研究商用移动网络处理紧急呼叫时的安全问题。
+    - title: 蜂窝物联网服务
+      detail: 我与合作者在 NSF NeTS 项目中研究了物联网设备和智能手机共享蜂窝基础设施时，运营商如何保障接入和服务安全。
+    - title: 人工智能与系统安全
+      detail: 我正在探索如何利用语言模型比对协议规范与实际实现，找出需要进一步验证的安全假设。
+teaching:
+  heading: 教学
+  course: 计算机网络安全
+  course_detail: 面向杭州电子科技大学留学生设计的网络安全入门课程。
+  ta_label: 密歇根州立大学助教经历
+  ta_courses:
+    - name: Web 应用架构与开发
+      term: CSE 477 · 2024 年秋、2025 年春
+    - name: 计算机安全导论
+      term: CSE 425 · 2024 年春
+    - name: 计算机与网络安全
+      term: CSE 825 · 2023 年秋
+students:
+  heading: 招生与合作
+  invitation: 欢迎对系统与网络安全感兴趣的同学联系我。来信可以谈谈你读过的论文、做过的项目，或一个想继续研究的问题。

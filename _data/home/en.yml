@@ -1,0 +1,72 @@
+name: Sihan Wang
+profile_label: Academic profile
+department: School of Cyberspace Security
+position: Assistant Professor
+portrait: Portrait
+portrait_alt: Portrait of Sihan Wang
+scholar: Google Scholar
+education:
+  heading: Education
+  doctoral_university: Michigan State University
+  doctoral_degree: PhD, Computer Science and Engineering · August 2025
+  advisor_label: Advised by
+  doctoral_advisor: Guan-Hua Tu
+  dissertation: Doctoral dissertation
+  graduate_path: I began in the MS program with Guoliang Xing and transferred to the PhD program in May 2019.
+  undergraduate_university: Northeastern University
+  undergraduate_degree: BSc, Computer Science and Engineering · July 2016
+  undergraduate_location: Shenyang, China
+appointments:
+  heading: Appointments
+  items:
+    - institution: Hangzhou Dianzi University
+      detail: Assistant Professor · April 2026–present
+    - institution: Utah State University
+      detail: Research Assistant · August–December 2025
+awards:
+  heading: Selected honors
+  items:
+    - name: "ACM MobiCom Best Community Paper Award, Runner-Up"
+      date: "2022"
+    - name: AT&T Security Award
+      date: "2023"
+    - name: ACM SIGMOBILE Research Highlight
+      date: "2023"
+    - name: ACM GetMobile Research Highlights
+      date: "2023, 2025"
+research:
+  label: Research
+  title: Systems and network security
+  introduction: I study the security and reliability of networked systems. Much of my work has examined mobile and wireless systems, using measurements from phones and operational cellular networks to understand how deployed services behave.
+  current_label: Current work
+  current: I’m exploring how AI can help researchers analyze complex systems, including the relationship between a protocol specification and its implementation.
+papers:
+  heading: Selected publications
+  all: All publications
+  url: /publications/
+news_heading: News
+news_paper: Paper
+projects:
+  heading: Research projects
+  items:
+    - title: Cellular emergency services
+      detail: As the student lead on an NSF SaTC project on next-generation 911, I helped investigate how emergency calls are handled in operational mobile networks.
+    - title: Cellular IoT services
+      detail: In an NSF NeTS project, my collaborators and I studied how operators secure the mobile network infrastructure shared by IoT devices and smartphones.
+    - title: AI for systems security
+      detail: I am exploring how language models can help compare protocol specifications with implementations and identify security assumptions that warrant closer examination.
+teaching:
+  heading: Teaching
+  course: Computer Network Security
+  course_detail: I designed this introductory course for international students at Hangzhou Dianzi University.
+  ta_label: Teaching assistant at Michigan State
+  ta_courses:
+    - name: Web Application Architecture and Development
+      term: CSE 477 · Fall 2024 and Spring 2025
+    - name: Introduction to Computer Security
+      term: CSE 425 · Spring 2024
+    - name: Computer and Network Security
+      term: CSE 825 · Fall 2023
+students:
+  heading: Students & collaboration
+  invitation: If you would like to work on systems or network security, tell me about a paper you have read, a project you have worked on, or a question you would like to investigate.
