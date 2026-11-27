@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="wrap reading archive" aria-labelledby="archive-title">
+  <h1 id="archive-title">{{ page.title | escape }}</h1>
+  <p class="note">{% if page.lang == 'zh-CN' %}* 共同第一作者{% else %}* Equal contribution{% endif %}</p>
+  {% assign years = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}
+  {% for year in years %}
+    <section class="block" aria-labelledby="year-{{ year.name }}">
+      <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
+      {% for paper in year.items %}
+        {% include publication.html paper=paper archive="yes" %}
+      {% endfor %}
+    </section>
+  {% endfor %}
+</section>

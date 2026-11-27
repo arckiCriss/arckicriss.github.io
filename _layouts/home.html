@@ -1,0 +1,115 @@
+---
+layout: default
+---
+{% assign locale = 'en' %}
+{% if page.lang == 'zh-CN' %}{% assign locale = 'zh' %}{% endif %}
+{% assign h = site.data.home[locale] %}
+{% assign portrait_path = site.portrait | default: '' | strip %}
+{% assign selected = site.data.publications | where: 'selected', true | sort: 'selected_order' %}
+<main class="wrap" id="main-content">
+  <aside class="profile" aria-label="{{ h.profile_label | escape }}">
+    <div class="profile-lead">
+      <div class="identity">
+        <h1>{{ h.name | escape }}</h1>
+        <p class="position">{{ h.department | escape }}</p>
+        <p class="title-cn">{{ h.position | escape }}</p>
+        <p class="profiles">
+          <a href="https://dblp.org/pid/213/7029-2.html">DBLP</a><span aria-hidden="true">·</span>
+          <a href="https://scholar.google.com/citations?user=mYKQWuIAAAAJ">{{ h.scholar | escape }}</a>
+        </p>
+        {% if site.email %}<p class="profile-email"><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></p>{% endif %}
+      </div>
+      <figure class="portrait">
+        {% if portrait_path != empty %}
+          <img class="portrait-photo" src="{{ portrait_path | relative_url | escape }}" alt="{{ h.portrait_alt | escape }}">
+        {% else %}
+          <figcaption>{{ h.portrait | escape }}</figcaption>
+        {% endif %}
+      </figure>
+    </div>
+    <section class="profile-part" aria-labelledby="education-heading">
+      <h2 class="eyebrow" id="education-heading">{{ h.education.heading | escape }}</h2>
+      <ul class="education">
+        <li>
+          <span class="degree">{{ h.education.doctoral_university | escape }}</span>
+          <span class="degree-meta">{{ h.education.doctoral_degree | escape }}<br>
+            {{ h.education.advisor_label | escape }} <a href="https://engineering.msu.edu/directory/faculty/ghtu">{{ h.education.doctoral_advisor | escape }}</a><br>
+            <a class="dissertation" href="https://doi.org/10.25335/gahv-wz82">{{ h.education.dissertation | escape }}</a>
+          </span>
+          <span class="degree-meta">{{ h.education.graduate_path | escape }}</span>
+        </li>
+        <li>
+          <span class="degree">{{ h.education.undergraduate_university | escape }}</span>
+          <span class="degree-meta">{{ h.education.undergraduate_degree | escape }}<br>{{ h.education.undergraduate_location | escape }}</span>
+        </li>
+      </ul>
+    </section>
+    <section class="profile-part" aria-labelledby="experience-heading">
+      <h2 class="eyebrow" id="experience-heading">{{ h.appointments.heading | escape }}</h2>
+      <ul class="education">
+        {% for job in h.appointments.items %}
+        <li>
+          <span class="degree">{{ job.institution | escape }}</span>
+          <span class="degree-meta">{{ job.detail | escape }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section class="profile-part" aria-labelledby="honors-heading">
+      <h2 class="eyebrow" id="honors-heading">{{ h.awards.heading | escape }}</h2>
+      <ul class="education">
+        {% for award in h.awards.items %}
+        <li>
+          <span class="degree">{{ award.name | escape }}</span>
+          <span class="degree-meta">{{ award.date | escape }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </aside>
+  <div class="content">
+    <section class="intro" id="research" aria-labelledby="research-heading">
+      <p class="eyebrow">{{ h.research.label | escape }}</p>
+      <h2 class="intro-title" id="research-heading">{{ h.research.title | escape }}</h2>
+      <p class="intro-text">{{ h.research.introduction | escape }}</p>
+      <p class="current"><b>{{ h.research.current_label | escape }}</b> {{ h.research.current | escape }}</p>
+    </section>
+    <section class="block" id="papers" aria-labelledby="papers-heading">
+      <h2 id="papers-heading">{{ h.papers.heading | escape }}</h2>
+      {% for paper in selected %}{% include publication.html paper=paper %}{% endfor %}
+      <p class="archive-link"><a href="{{ h.papers.url | relative_url }}">{{ h.papers.all | escape }}</a></p>
+    </section>
+    <section class="block news" id="news" aria-labelledby="news-heading">
+      <h2 id="news-heading">{{ h.news_heading | escape }}</h2>
+      {% for item in site.data.news %}
+        {% assign entry = item[locale] %}
+        <div class="news-row">
+          <time datetime="{{ item.date | escape }}">{{ entry.date_label | escape }}</time>
+          <p>{{ entry.text | escape }}{% if item.url %} <a href="{{ item.url | escape }}">{{ h.news_paper | escape }}</a>{% endif %}</p>
+        </div>
+      {% endfor %}
+    </section>
+    <section class="block" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">{{ h.projects.heading | escape }}</h2>
+      {% for project in h.projects.items %}
+        <p class="project-copy"><b>{{ project.title | escape }}</b> {{ project.detail | escape }}</p>
+      {% endfor %}
+    </section>
+    <div class="bottom-grid">
+      <section class="block" id="teaching" aria-labelledby="teaching-heading">
+        <h2 id="teaching-heading">{{ h.teaching.heading | escape }}</h2>
+        <h3>{{ h.teaching.course | escape }}</h3>
+        <p>{{ h.teaching.course_detail | escape }}</p>
+        <h3>{{ h.teaching.ta_label | escape }}</h3>
+        {% for course in h.teaching.ta_courses %}
+          <p>{{ course.name | escape }}<br><span class="degree-meta">{{ course.term | escape }}</span></p>
+        {% endfor %}
+      </section>
+      <section class="block" id="students" aria-labelledby="students-heading">
+        <h2 id="students-heading">{{ h.students.heading | escape }}</h2>
+        <p>{{ h.students.invitation | escape }}</p>
+        {% if site.email %}<p><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></p>{% endif %}
+      </section>
+    </div>
+  </div>
+</main>
