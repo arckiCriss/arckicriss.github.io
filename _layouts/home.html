@@ -36,7 +36,7 @@ layout: default
             {{ h.education.advisor_label | escape }} <a href="https://engineering.msu.edu/directory/faculty/ghtu">{{ h.education.doctoral_advisor | escape }}</a><br>
             <a class="dissertation" href="https://doi.org/10.25335/gahv-wz82">{{ h.education.dissertation | escape }}</a>
           </span>
-          <span class="degree-meta">{{ h.education.graduate_path | escape }}</span>
+          <div class="degree-meta">{{ h.education.graduate_path | markdownify }}</div>
         </li>
         <li>
           <span class="degree">{{ h.education.undergraduate_university | escape }}</span>
